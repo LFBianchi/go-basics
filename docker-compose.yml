@@ -1,0 +1,10 @@
+services:
+  go-dev:
+    image: golang
+    container_name: go-dev-container
+    volumes:
+      - ./src:/go/src
+    working_dir: /go/src
+    ports:
+      - "8080:8080"
+    command: tail -f /dev/null
