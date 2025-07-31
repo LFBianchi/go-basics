@@ -11,7 +11,7 @@ func printPrimes(max int) {
 			continue
 		}
 		flagPrime := true
-		for j := 2; j < i; j++ {
+		for j := 2; j*j <= i; j++ {
 			if i%j == 0 {
 				flagPrime = false
 				break
